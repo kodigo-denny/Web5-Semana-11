@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ejemplo02.js"></script>
+    <script>
+        let ave = new Ave("Gris", 1, "Perico")
+        let perro = new Perro("Blanco", 2, "Chihuahua")
+        let animal = new Animal("Azul", 2)
+    
+        console.log(ave)
+        ave.comer()
+
+        console.log(perro)
+        perro.comer()
+        perro.ladrar()
+
+        console.log(animal)
+        animal.comer()
+
+        let perro2 = new Cachorro("Blanco", 2, "Chihuahua", 0)
+        console.log(perro2)
+
+
+        console.log("makeSound")
+        animal.makeSound()
+        perro.makeSound()
+        perro.ladrar()
+        let gato = new Gato("Gris", 2)
+        gato.makeSound()
+        perro2.makeSound()
+        perro2.ladrar()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
